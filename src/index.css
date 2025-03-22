@@ -7,7 +7,9 @@
   --radius: 0.625rem;
   --background: oklch(93.18% 0.0188 75.32);
   --foreground: oklch(0.145 0 0);
-  --nav-background: oklch(96.92% 0.0162 95.22);
+  --btn-background: #313134;
+  --title-background: #f5f0e8;
+  --nav-background: oklch(96.92% 0.0162 95.22 / 70%);
   --dropdown-background: oklch(100% 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -43,7 +45,9 @@
 .dark {
   --background: oklch(24.48% 0.0056 285.98);
   --foreground: oklch(0.985 0 0);
-  --nav-background: oklch(24.48% 0.0056 285.98);
+  --btn-background: #313134;
+  --title-background: #313134;
+  --nav-background: oklch(24.48% 0.0056 285.98 / 70%);
   --dropdown-background: oklch(20.46% 0 0);
   --card: oklch(0.205 0 0);
   --card-foreground: oklch(0.985 0 0);
@@ -121,5 +125,32 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  h1 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+  }
+
+  h3 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: #525252;
+    text-decoration-thickness: 4px;
+  }
+
+  h4 {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  p {
+    text-align: justify;
+    text-indent: 28px;
+    hyphens: auto;
   }
 }
