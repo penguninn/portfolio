@@ -5,7 +5,7 @@ import Home from "./components/pages/home";
 
 function App() {
   return (
-    <div className="w-full">
+    <div className="w-full transition-colors duration-500">
       <Font />
       <Navbar />
       <div className="w-full pt-16 flex justify-center p-3 sm:p-0">
