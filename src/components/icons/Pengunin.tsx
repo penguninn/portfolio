@@ -1,5 +1,5 @@
 
-const Pengunin = (props) => {
+const Pengunin = () => {
   return (
     <svg
       fill="currentColor"
@@ -7,7 +7,6 @@ const Pengunin = (props) => {
       width="18px"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 305 305"
-      {...props}
     >
       <g id="XMLID_91_">
         <path
