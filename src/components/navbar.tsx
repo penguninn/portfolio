@@ -18,7 +18,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="w-full fixed z-2 flex justify-center items-center backdrop-blur-md bg-[var(--nav-background)]">
+    <div className="w-full fixed top-0 z-2 flex justify-center items-center backdrop-blur-md bg-[var(--nav-background)]">
       <div className="flex w-full max-w-xl p-2 justify-between items-center">
         <div className="mr-12">
           <Logo />
@@ -49,7 +49,7 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <NavLink
                   target="_blank"
-                  to="https://github.com/penguninn"
+                  to="https://github.com/penguninn/portfolio"
                   className={({ isActive }) =>
                     `flex flex-row justify-center items-center hover:underline p-2 rounded-sm ${
                       isActive ? "bg-pink-500" : "bg-transparent"

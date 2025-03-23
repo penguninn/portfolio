@@ -92,10 +92,15 @@ const Home = () => {
         <h3>Link</h3>
         <div className="list-none">
           <div className="list-item">
-            <Link to="https://github.com/penguninn" target="_blank">
+            <Link
+              to="https://github.com/penguninn"
+              target="_blank"
+              className="inline-block"
+            >
               <Button
                 variant="ghost"
-                className="flex items-center justify-center gap-3 text-lg text-pink-600 hover:text-pink-600 hover:bg-pink-300"
+                className="flex items-center justify-center gap-3 cursor-pointer text-lg text-pink-600 
+                hover:text-pink-600 hover:bg-pink-300 dark:hover:bg-gray-800"
               >
                 <FaGithub />
                 @penguninn
@@ -106,10 +111,12 @@ const Home = () => {
             <Link
               to="https://www.linkedin.com/in/david-400b01221/"
               target="_blank"
+              className="inline-block"
             >
               <Button
                 variant="ghost"
-                className="flex items-center justify-center gap-3 text-lg text-pink-600 hover:text-pink-600 hover:bg-pink-300"
+                className="flex items-center justify-center gap-3 cursor-pointer text-lg text-pink-600 
+                hover:text-pink-600 hover:bg-pink-300 dark:hover:bg-gray-800"
               >
                 <FaLinkedinIn />
                 @david
@@ -117,10 +124,15 @@ const Home = () => {
             </Link>
           </div>
           <div className="list-item">
-            <Link to="https://x.com/NantatsuNo" target="_blank">
+            <Link
+              to="https://x.com/NantatsuNo"
+              target="_blank"
+              className="inline-block"
+            >
               <Button
                 variant="ghost"
-                className="flex items-center justify-center gap-3 text-lg text-pink-600 hover:text-pink-600 hover:bg-pink-300"
+                className="flex items-center justify-center gap-3 cursor-pointer text-lg text-pink-600 
+                hover:text-pink-600 hover:bg-pink-300 dark:hover:bg-gray-800"
               >
                 <FaXTwitter />
                 @david
@@ -149,11 +161,6 @@ const Home = () => {
             coolermaster.1082005@gmail.com
           </Link>
         </p>
-      </div>
-      <div className="w-full mb-6">
-        <span className="flex justify-center text-gray-400 text-md font-semibold">
-          © 2025 Mac Vu Anh Dai. All Rights Reserved.
-        </span>
       </div>
     </div>
   );
