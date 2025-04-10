@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Pengunin from "./icons/Pengunin";
+import Pengunin from "./Pengunin";
 import { Label } from "@radix-ui/react-label";
 
 const Logo = ({ showLabel = true }: { showLabel?: boolean }) => {
@@ -12,7 +12,7 @@ const Logo = ({ showLabel = true }: { showLabel?: boolean }) => {
             className="cursor-pointer font-bold text-md"
             style={{ fontFamily: `"M PLUS Rounded 1c", sans-serif` }}
           >
-            Pengunin
+            Macvuanh Dai
           </Label>
         )}
       </div>

@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -20,45 +20,38 @@ const Navbar = () => {
   return (
     <div className="w-full fixed top-0 z-2 flex justify-center items-center backdrop-blur-md bg-[var(--nav-background)]">
       <div className="flex w-full max-w-xl p-2 justify-between items-center">
-        <div className="mr-12">
+        <div className="mr-12 w-full md:w-1/2">
           <Logo />
         </div>
         <div className="w-full flex justify-start items-center">
           <NavigationMenu className="hidden md:block">
             <NavigationMenuList className="gap-5">
               <NavigationMenuItem>
-                <NavLink
+                <Link
                   to="/projects"
-                  className={({ isActive }) =>
-                    `hover:underline p-2 rounded-sm ${isActive ? "bg-pink-500" : "bg-transparent"}`
-                  }
+                  className={`hover:underline p-2`}
                 >
                   Projects
-                </NavLink>
+                </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavLink
-                  to="/posts"
-                  className={({ isActive }) =>
-                    `hover:underline p-2 rounded-sm ${isActive ? "bg-pink-500" : "bg-transparent"}`
-                  }
+                <Link
+                  target="_blank"
+                  to="https://blog.penguninn.com"
+                  className={`hover:underline p-2`}
                 >
                   Posts
-                </NavLink>
+                </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavLink
+                <Link
                   target="_blank"
                   to="https://github.com/penguninn/portfolio"
-                  className={({ isActive }) =>
-                    `flex flex-row justify-center items-center hover:underline p-2 rounded-sm ${
-                      isActive ? "bg-pink-500" : "bg-transparent"
-                    }`
-                  }
+                  className={`flex flex-row justify-center items-center hover:underline p-2`}
                 >
                   <IoLogoGithub />
                   Source
-                </NavLink>
+                </Link>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
@@ -77,15 +70,12 @@ const Navbar = () => {
                   <Link to="/projects">Projects</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link to="/posts">Posts</Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <Link to="/about">About</Link>
+                  <Link to="https://blog.penguninn.com">Posts</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link
                     target="_blank"
-                    to="https://github.com/penguninn"
+                    to="https://github.com/penguninn/portfolio"
                     className="flex flex-row justify-between items-center"
                   >
                     <IoLogoGithub />
